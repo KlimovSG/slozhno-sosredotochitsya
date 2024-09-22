@@ -40,3 +40,9 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+body {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: normal;
+  font-display: swap;
+}
