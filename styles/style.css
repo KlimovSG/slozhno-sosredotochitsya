@@ -162,7 +162,7 @@
 .header__theme-menu-button_type_dark {
 } */
 .header__title {
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 0.825;
@@ -227,7 +227,7 @@
     /* text-decoration: underline; */
     text-decoration: none;
     color: var(--text-color, #f1b2ce);
-    text-shadow: 2px 1.2px 0 var(--accent-color, #ff0070);
+    text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -284,7 +284,7 @@
 }
 
 .footer__title {
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 0.825;
@@ -306,11 +306,7 @@
         justify-self: end;
     }
 
-    .section:has(.concentration-troubles) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .section:has(.how-to-concentrate) {
+    .section:has(.concentration-issues) {
         grid-template-columns: 1fr 2fr;
     }
     .section:has(.concentration-enemies) {
@@ -318,9 +314,6 @@
         grid-column-end: span 2;
     }
 
-    .concentration-enemies {
-        grid-column: span 3;
-    }
     .concentration-enemies {
         grid-column: span 3;
     }
@@ -361,8 +354,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .how-to-concentrate,
-    .concentration-troubles {
+    .concentration-issues {
         grid-column: span 2;
     }
 
